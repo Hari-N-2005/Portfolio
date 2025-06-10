@@ -1,17 +1,17 @@
 import React from 'react';
 import Card from './Card';
 import Data from './Data';
-import './Resume.css';
+import styles from './resume.module.css';
 
 const Resume = () => {
   return (
-    <section className="section skills" id="skills">
-      <div className="container">
-        <div className="section__header">
-          <h2 className="section__title">Skills</h2>
+    <section className={`${styles.section} ${styles.skills}`} id="skills">
+      <div className={styles.container}>
+        <div className={styles.section__header}>
+          <h2 className={styles.section__title}>Skills</h2>
         </div>
 
-        <div className="skills__container grid">
+        <div className={`${styles.skills__container} ${styles.grid}`}>
           {Data.map((category) => (
             <Card
               key={category.id}

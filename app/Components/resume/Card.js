@@ -1,17 +1,17 @@
 import React from 'react';
-import './resume.css';
+import styles from './resume.module.css'; // Make sure to import styles
 
 const Card = ({ title, skills }) => {
   return (
-    <div className="skills__card">
-      <h3 className="skills__title">{title}</h3>
-      <div className="skills__group">
+    <div className={styles.skills__card}>
+      <h3 className={styles.skills__title}>{title}</h3>
+      <div className={styles.skills__group}>
         {skills.map((skill, index) => (
-          <div className="skills__item" key={index}>
+          <div className={styles.skills__item} key={index}>
             <img 
               src={skill.logo} 
               alt={skill.name} 
-              className="skills__badge" 
+              className={styles.skills__badge} 
             />
           </div>
         ))}
