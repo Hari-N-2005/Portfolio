@@ -1,6 +1,6 @@
 // Config Driven UI
 
-const skillsData = [
+const Data = [
   {
     id: 1,
     title: "Frontend",
@@ -40,4 +40,4 @@ const skillsData = [
   }
 ];
 
-export default skillsData;
+export default Data;
