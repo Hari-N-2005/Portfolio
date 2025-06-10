@@ -1,5 +1,5 @@
 import React from 'react';
-import './resume.css';
+import './resume.module.css';
 
 const Card = ({ title, skills }) => {
   return (
