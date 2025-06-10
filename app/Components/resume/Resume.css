@@ -1,0 +1,75 @@
+/* Match other section styling */
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+  position: relative;
+  text-align: center;
+}
+
+/* Add decorative underline if your other sections have it */
+.section__title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 2px;
+  margin: 0.5rem auto 0;
+  background-color: var(--first-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+/* Skills specific styles */
+.skills__container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+}
+
+.skills__card {
+  background: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skills__card:hover {
+  transform: translateY(-5px);
+}
+
+.skills__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.skills__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skills__badge {
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.skills__badge:hover {
+  transform: scale(1.1);
+}
