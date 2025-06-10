@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './card.js';
-import { skillsData } from './data.js';
-import './resume.css';
+import Card from '../resume/card';
+import skillsData from '../resume/data';
+import '../resume/resume.css';
 
 const Resume = () => {
   return (
