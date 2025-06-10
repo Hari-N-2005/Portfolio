@@ -41,7 +41,6 @@
 .skills__card {
   background: var(--container-color);
   padding: 1.5rem;
-  border-radius: 1.25rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
