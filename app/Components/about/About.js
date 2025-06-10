@@ -14,6 +14,7 @@ const About = () => {
 
     <div className='about__data'>
       <div className='about__info'>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <p className='about__description'>
         I&apos;m a passionate Front-End Developer with a keen eye for design and a love for crafting seamless user experiences. Currently studying at Model Engineering College, Thrikakkara, I specialize in building responsive, intuitive, and visually appealing web applications. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks like React, I thrive on bringing creative ideas to life through clean and efficient code. I&apos;m always eager to learn, experiment, and push the boundaries of front-end development.
         </p>
