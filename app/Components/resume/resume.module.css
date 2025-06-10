@@ -34,8 +34,12 @@
 
 /* Skills specific styles */
 .skills__container {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Exactly 2 cards per row */
+  justify-content: center; /* Center the grid itself */
   gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .skills__card {
@@ -71,4 +75,10 @@
 
 .skills__badge:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
 }

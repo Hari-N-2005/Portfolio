@@ -125,6 +125,7 @@
 
     .section__title{
         font-size: var(--h1-font-size);
+        text-align: center;
         margin-left: 0.875rem;
         font-weight: var(--font-bold);
         position: relative;
@@ -140,6 +141,15 @@
         left: -0.875rem;
         top: -0.875rem;
 
+    }
+
+        .section__title::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    margin: 0.5rem auto 0;
+    background-color: var(--first-color);
     }
 
     .btn {

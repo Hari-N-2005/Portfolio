@@ -10,7 +10,7 @@ const About = () => {
       </h2>
 
     <div className='about__container grid'>
-    <img src= "https://i.ibb.co/k89WFzY/about-us-pic.png" alt='' className='about__img'/>
+    <img src= "https://cdn3d.iconscout.com/3d/premium/thumb/male-programmer-3d-icon-download-in-png-blend-fbx-gltf-file-formats--developer-coder-software-metaverse-pack-science-technology-icons-4846824.png" alt='' className='about__img'/>
 
     <div className='about__data'>
       <div className='about__info'>

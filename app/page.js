@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-//import Sidebar from "./Components/sidebar/Sidebar";
+import Sidebar from "./Components/sidebar/Sidebar";
 import Home from "./Components/home/Home";
 import About from "./Components/about/About";
 import Resume from "./Components/resume/Resume";
@@ -12,6 +12,7 @@ const page = () => {
     <>
       <main className="main">
         <Home />
+        <Sidebar />
         <About />
         <Resume />
         <Portfolio />
