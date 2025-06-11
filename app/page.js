@@ -11,8 +11,8 @@ const page = () => {
   return (
     <>
       <main className="main">
-        <Home />
         <Sidebar />
+        <Home />
         <About />
         <Resume />
         <Portfolio />

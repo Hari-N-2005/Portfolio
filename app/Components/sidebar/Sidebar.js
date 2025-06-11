@@ -20,24 +20,28 @@ const Sidebar = () => {
 
           <a href='#home' className='nav__link'>
              <i className="fa-solid fa-house"></i>
+             <span className='nav__text'>Home</span>
           </a>
         </li>
 
         <li className='nav__item'>
           <a href='#about' className='nav__link'>
-          <i className="fa-solid fa-address-card"></i>
+            <i className="fa-solid fa-address-card"></i>
+            <span className='nav__text'>About</span>
           </a>
         </li>
 
         <li className='nav__item'>
           <a href='#skills' className='nav__link'>
-          <i className="fa-solid fa-desktop"></i>
+            <i className="fa-solid fa-desktop"></i>
+            <span className='nav__text'>Skills</span>
           </a>
         </li>
 
         <li className='nav__item'>
           <a href='#work' className='nav__link'>
-          <i className="fa-solid fa-diagram-project"></i>
+            <i className="fa-solid fa-diagram-project"></i>
+            <span className='nav__text'>Projects</span>
           </a>
         </li>
 

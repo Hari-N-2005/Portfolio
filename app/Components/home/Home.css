@@ -23,10 +23,10 @@
 }
 .home__socials {
   display: flex;
-  align-items: center;
+  align-items: center;  
   justify-content: center;
-  column-gap: 1.75rem;
-  margin: 1.5rem 0;
+  column-gap: 1.85rem;
+  margin: 1.rem 0;
 }
 
 .home__social-link {
@@ -37,6 +37,21 @@
 
 .home__social-link:hover {
   color: hsl(43, 100%, 68%);
+}
+
+.home__contact {
+  margin-top: 5.5rem;
+  text-align: center;
+}
+
+.contact__label {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: 0.3rem; /* reduce spacing between text and icons */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
 }
 
 .scroll__down {

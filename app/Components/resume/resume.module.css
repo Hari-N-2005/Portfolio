@@ -80,5 +80,7 @@
 @media screen and (max-width: 768px) {
   .skills__container {
     grid-template-columns: 1fr;
+    padding: 0 1rem; /* Add horizontal space */
+    gap: 0.5rem; /* Adjust gap for smaller screens */
   }
 }
