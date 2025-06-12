@@ -1,24 +1,33 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Sidebar from "./Components/sidebar/Sidebar";
 import Home from "./Components/home/Home";
 import About from "./Components/about/About";
 import Resume from "./Components/resume/Resume";
 import Portfolio from "./Components/portfolio/Portfolio";
-//import Contact from "./Components/contact/Contact";
-//import PortfolioModal from "./Components/modal/PortfolioModal";
+
 const page = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+    });
+  }, []);
+
   return (
-    <>
-      <main className="main">
-        <Sidebar />
-        <Home />
-        <About />
-        <Resume />
-        <Portfolio />
-      </main>
-    </>
+    <main className="main">
+      <Sidebar />
+      <Home />
+      <About />
+      <Resume />
+      <Portfolio />
+    </main>
   );
 };
 
 export default page;
+

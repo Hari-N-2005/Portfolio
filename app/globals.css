@@ -41,6 +41,10 @@
     --border-radius: 20px;
 }
 
+#about {
+  scroll-margin-top: 5rem;
+}
+
 /* Responsive Typography */
 
 @media screen and (max-width: 1024px) {
