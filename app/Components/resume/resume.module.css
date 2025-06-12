@@ -43,13 +43,13 @@
 }
 
 .skills__card {
-  background: var(--container-color);
+  background: none;
   padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.skills__card:hover {
+.skilld__card:hover {
   transform: translateY(-5px);
 }
 

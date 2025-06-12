@@ -65,7 +65,7 @@
 /* OPTIONAL - if you still want toggle behavior on mobile */
 @media screen and (max-width: 768px) {
   .aside {
-    padding: 0 1rem; 
+    padding: 0 1rem; /* Reduce padding on smaller screens */
     position: fixed;
     z-index: 9999; /* Higher than any AOS element */
     top: 0;

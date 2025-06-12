@@ -25,16 +25,13 @@ const Resume = () => {
           <h2 className={styles.section__title}>Skills</h2>
         </div>
 
-        <div
-          className={`${styles.skills__container} ${styles.grid}`}
-          data-aos="zoom-in-up"
-        >
+        <div className={`${styles.skills__container} ${styles.grid}`}>
           {Data.map((category) => (
-            <div key={category.id} data-aos="fade-up" data-aos-delay="100">
-              <Card title={category.title} skills={category.skills} />
-            </div>
-          ))}
+            <Card key={category.id} title={category.title} skills={category.skills} />
+
+        ))}
         </div>
+
       </div>
     </section>
   );
