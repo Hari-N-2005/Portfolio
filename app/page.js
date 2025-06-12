@@ -9,7 +9,7 @@ import About from "./Components/about/About";
 import Resume from "./Components/resume/Resume";
 import Portfolio from "./Components/portfolio/Portfolio";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -29,5 +29,5 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
