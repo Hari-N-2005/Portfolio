@@ -67,7 +67,8 @@
   .aside {
     padding: 0 1rem; /* Reduce padding on smaller screens */
     position: fixed;
-    z-index: 9999; /* Higher than any AOS element */
+    z-index: 1000; /* Higher than any AOS element */
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -76,10 +77,15 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds visibility */
   }
 
+   .nav__menu {
+    justify-content: center; /* Also center inside nav__menu */
+  }
+
   /* Optional: Prevent animation overlap on mobile */
   [data-aos] {
     z-index: 0 !important;
     position: relative;
+    transform: none !important;
   }
 
   .nav__list {
@@ -88,5 +94,13 @@
 
   .nav__logo img {
     display: none;
+  }
+
+   .nav__toggle {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
