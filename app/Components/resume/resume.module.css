@@ -10,7 +10,7 @@
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: whitesmoke;
   margin-bottom: 0.5rem;
   position: relative;
   text-align: center;
@@ -29,7 +29,7 @@
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: whitesmoke;
 }
 
 /* Skills specific styles */
@@ -45,11 +45,12 @@
 .skills__card {
   background: none;
   padding: 1.5rem;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 2px rgba(6, 243, 203, 0.8); /* Even glow all around */
+  border-radius: 30px; /* Optional for smoother edges */
   transition: transform 0.3s ease;
 }
 
-.skilld__card:hover {
+.skills__card:hover {
   transform: translateY(-5px);
 }
 
@@ -58,7 +59,7 @@
   font-weight: var(--font-medium);
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--title-color);
+  color: whitesmoke;
 }
 
 .skills__group {
@@ -81,6 +82,6 @@
   .skills__container {
     grid-template-columns: 1fr;
     padding: 0 1rem; /* Add horizontal space */
-    gap: 0.5rem; /* Adjust gap for smaller screens */
+    gap: 1rem; /* Adjust gap for smaller screens */
   }
 }

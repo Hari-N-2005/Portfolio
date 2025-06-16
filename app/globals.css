@@ -75,6 +75,7 @@
     textarea {
         font-family: var(--body-font);
         font-size: var(--normal-font-size);
+        background: linear-gradient(135deg, #1a0033, #330066, #4b0082);
     }
 
     body{
@@ -84,7 +85,7 @@
     }
 
     h1,h2,h3{
-        color: var(--title-color);
+        color: white;
         font-weight: var(--font-semibold);
         line-height: 1.2;
     }
@@ -186,7 +187,7 @@
     }
 
     .main {
-        margin-left: 110px;
+        margin-left: 0 !important;
     }
 
     @media screen and (max-width:1024px) {
@@ -194,3 +195,8 @@
              margin-left: 0;
         }
     }
+
+    html, body {
+      overflow-x: hidden;
+      width: 100vw;
+}
