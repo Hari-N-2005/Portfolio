@@ -19,15 +19,18 @@ const Page = () => {
   }, []);
 
   return (
-    <main className="main">
-      <Sidebar />
-      <Home />
-      <About />
-      <Resume />
-      <Portfolio />
-    </main>
+    <>
+      {/* Fixed background layer */}
+      <div className="fixed-background" />
+      <main className="main">
+        <Sidebar />
+        <Home />
+        <About />
+        <Resume />
+        <Portfolio />
+      </main>
+    </>
   );
 };
 
 export default Page;
-
