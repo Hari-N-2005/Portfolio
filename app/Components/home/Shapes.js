@@ -43,9 +43,10 @@ const Shapes = () => {
       {shapeList.map((shape, i) => (
         <motion.svg
           key={shape.id}
-          width="100"
-          height="100"
+          width="10vw"
+          height="10vw"
           viewBox="0 0 100 100"
+          preserveAspectRatio="xMidYMid meet"
           variants={floatVariants}
           animate="animate"
           style={{

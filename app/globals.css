@@ -75,7 +75,11 @@
     textarea {
         font-family: var(--body-font);
         font-size: var(--normal-font-size);
-        background: linear-gradient(135deg, #1a0033, #330066, #4b0082);
+        background-image: url('../public/images/bg-image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
     body{
