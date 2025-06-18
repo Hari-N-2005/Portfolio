@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" />
 
         {/* <-- FAVICON --> */}
-        <link rel="icon" href="/images/portfolio.png" type="image/png" />
+        <link rel="icon" href="https://i.ibb.co/TqHpcqhD/portfolio.png" type="image/png" />
       </head>
       <body>
         {children}

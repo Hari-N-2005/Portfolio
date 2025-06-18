@@ -194,6 +194,14 @@
     @media screen and (max-width:1024px) {
         .main{
              margin-left: 0;
+             background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://i.ibb.co/pBcSLdvp/bg-image.jpg');
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .main {
+            margin-left: 0 !important;
+            background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://i.ibb.co/pBcSLdvp/bg-image.jpg');
         }
     }
 
@@ -208,7 +216,7 @@
         left: 0;
         height: 100dvh;
         width: 100vw;
-        background-image: url('../public/images/bg-image.jpg');
+        background-image: url('https://i.ibb.co/pBcSLdvp/bg-image.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
