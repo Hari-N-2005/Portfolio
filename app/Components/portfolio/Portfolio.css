@@ -19,6 +19,7 @@
 .work__container {
     grid-template-columns: repeat(3,1fr);
     gap: 1.875rem;
+    margin-bottom: 8%;
 }
 
 .work__card{
@@ -26,10 +27,14 @@
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    transition: min-height 0.3s ease, transform 0.3s ease;
+    z-index: 0;
 }
 
+
+
 .work__mask {
-    background: #6c6ce5;
+    background: rgb(21, 1, 32);
     position: absolute;
     left: 0%;
     top: 0%;
@@ -41,7 +46,13 @@
 }
 
 .work__card:hover .work__mask {
-    opacity: 0.9;
+    opacity: 2.5;
+}
+
+.work__card:hover {
+    min-height: 115%; /* expanded height on hover */
+    z-index: 2;
+    transform: translateY(-10px);
 }
 
 .work__category {
@@ -65,17 +76,31 @@
     margin: 0 0 0.98rem;
     padding: 0 1.25rem;
     position: absolute;
-    top: 3.75rem;
+    top: 2.15rem;
     transform: translateY(30px);
     transition: .3s;
     opacity: 0;
 }
 
+.work__thumbnail {
+  width: 100%;
+  height: 200px; /* Or any consistent height */
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.work__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .work__button {
-    color:#fff;
+    color: rgb(63, 4, 102);
     position: absolute;
     bottom: 1.5rem;
-    left: 1.5rem;
+    left: 1.25rem;
     display: block;
     background-color: #ffd15c;
     height: 40px;
@@ -84,16 +109,36 @@
     border-radius: 50%;
     text-align: center;
     line-height: 42px;
-    transition: .3s; 
+    transition: 0.3s;
     opacity: 0;
+    z-index: 2;
+}
+
+/* Description text */
+.work__description {
+    position: absolute;
+    top: 4.65rem; /* Just below .work__title (2.15rem + margin) */
+    left: 1.25rem;
+    right: 1.25rem;
+    color: #fff;
+    font-size: var(--small-font-size);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.3s;
+    line-height: 1.4;
 }
 
 .work__card:hover .work__button {
     opacity: 1;
 }
 
+.work__card:hover .work__description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .work__card:hover .work__title,
-.work__card:hover .work__category {
+.work__card:hover .work__description{
     opacity: 1;
     transform: translateY(0);
 }
