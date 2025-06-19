@@ -75,12 +75,12 @@
     textarea {
         font-family: var(--body-font);
         font-size: var(--normal-font-size);
-        background-color: black; /* fallback in case image fails */
+        background-color: black; 
     }
 
 
     body{
-        background-color: var(--body-color);
+        background-color: #17032b;  /* fallback in case image fails */
         line-height: 1.7;
         color: var(--text-color);
     }
