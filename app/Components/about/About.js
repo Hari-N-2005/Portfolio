@@ -33,7 +33,7 @@ const About = () => {
           I&apos;m always excited to take on new challenges, collaborate on projects, and grow as a developer in the fast evolving tech industry.
         </p>
         <a
-          href="https://drive.google.com/file/d/1vu8z1UB3ADTkmJL1HDl-KLLk5EmOF2-1/view"
+          href="https://drive.google.com/file/d/1rVSk73bsfe6ycMNcd_QIYeOOuzqi7J1k/view?usp=sharing"
           className="btn"
           download={"Hari's Resume"}
         >
