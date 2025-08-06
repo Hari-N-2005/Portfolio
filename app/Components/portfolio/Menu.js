@@ -8,13 +8,20 @@ const Menu =[
   },
   {
     id:2,
+    Image: "https://i.ibb.co/TDyNmJ4g/AI-Shopping-Companion-Logo-Fresh-Emblem.png",
+    title: "EcoMind",
+    link: "https://github.com/Hari-N-2005/EcoMind",
+    description: "EcoMind is a Chrome extension that helps users make ethical and sustainable shopping decisions by analyzing product pages in real time using AI.",
+  },
+  {
+    id:3,
     Image: "https://i.ibb.co/7JVFqhx9/carbontallylogo.jpg",
     title:"CarbonTally",
     link: "https://github.com/Hari-N-2005/NasaSpaceChallenge",
     description: "Carbon Tally is a webstie that uses a xgboost model which enables users to predict and track their carbon emissions per month."
   },
   {
-    id:3,
+    id:4,
     Image: "https://i.ibb.co/yFKwv1jm/portfolio1.png",
     title:"Portfolio",
     link: "https://github.com/Hari-N-2005/Portfolio",
