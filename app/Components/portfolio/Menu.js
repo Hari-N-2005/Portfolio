@@ -8,7 +8,7 @@ const Menu =[
   },
   {
     id:2,
-    Image: "https://i.ibb.co/TDyNmJ4g/AI-Shopping-Companion-Logo-Fresh-Emblem.png",
+    Image: "https://i.ibb.co/N2TV0xj9/ecomind.jpg",
     title: "EcoMind",
     link: "https://github.com/Hari-N-2005/EcoMind",
     description: "EcoMind is a Chrome extension that helps users make ethical and sustainable shopping decisions by analyzing product pages in real time using AI.",
@@ -22,10 +22,17 @@ const Menu =[
   },
   {
     id:4,
+    Image: "https://i.ibb.co/kgyMB9ks/boxlogo3.jpg",
+    title:"Private Dropbox",
+    link: "https://github.com/Hari-N-2005/Dropbox",
+    description: "A private web app powered by Google Drive, allowing users to securely share files between devices without login.",
+  }, 
+  {
+    id:5,
     Image: "https://i.ibb.co/yFKwv1jm/portfolio1.png",
     title:"Portfolio",
     link: "https://github.com/Hari-N-2005/Portfolio",
     description: "This is my personal portfolio website, showcasing my skills, projects, and experiences.",
-  }, 
+  },
 ]
 export default Menu
