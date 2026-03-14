@@ -6,6 +6,34 @@ import {
   getProjectById,
   PROJECT_DATA
 } from '@/app/data/project'
+import basePath from '../../lib/basePath'
+
+const TECH_ICON_MAP: Record<string, string> = {
+  react: 'react.svg',
+  javascript: 'javascript.svg',
+  html5: 'html5.svg',
+  css3: 'css3.svg',
+  nodejs: 'nodejs.svg',
+  express: 'express.svg',
+  expressjs: 'express.svg',
+  mongodb: 'mongodb.svg',
+  jwt: 'jwt.svg',
+  git: 'git.svg',
+  github: 'github.svg',
+  vscode: 'vscode.svg',
+  python: 'python.svg',
+  pandas: 'pandas.svg',
+  numpy: 'numpy.svg',
+  mysql: 'mysql.svg',
+  postgresql: 'postgresql.svg',
+  supabase: 'supabase.svg',
+}
+
+const getTechIconPath = (techName: string) => {
+  const normalized = techName.toLowerCase().replace(/[^a-z0-9]/g, '')
+  const fileName = TECH_ICON_MAP[normalized] || `${normalized}.svg`
+  return `${basePath}/skills/${fileName}`
+}
 
 export default function ExperienceModal({ 
   open, 
@@ -251,10 +279,14 @@ export default function ExperienceModal({
                           group-hover:-translate-y-1
                         ">
                           <Image
-                            src={`/skills/${item.toLowerCase().replace(/[\s()\.+]/g, '')}.svg`}
+                            src={getTechIconPath(item)}
                             alt={item}
                             width={32}
                             height={32}
+                            onError={(e) => {
+                              const img = e.currentTarget as HTMLImageElement
+                              img.src = `${basePath}/skills/svg.svg`
+                            }}
                             className="
                               dark:invert          
                               sm:w-[40px] sm:h-[40px]

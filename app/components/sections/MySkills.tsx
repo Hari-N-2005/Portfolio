@@ -34,9 +34,9 @@ const technologies = {
   // Database and deployment examples
   infrastructure: [
     { name: 'MongoDB', icon: '/skills/mongodb.svg' },
-    { name: 'MySQL', icon: '/skills/svg.svg' },
-    { name: 'PostgreSQL', icon: '/skills/svg.svg' },
-    { name: 'Supabase', icon: '/skills/svg.svg' },
+    { name: 'MySQL', icon: '/skills/mysql.svg' },
+    { name: 'PostgreSQL', icon: '/skills/postgresql.svg' },
+    { name: 'Supabase', icon: '/skills/supabase.svg' },
   ],
 
   // Development tools examples
