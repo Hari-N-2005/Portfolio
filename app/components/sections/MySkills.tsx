@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from "next/image"
 import AnimatedText from "../common/AnimatedText"
+import GradientBackground from "../common/GradientBackground"
 import basePath from "../../lib/basePath"
 
 // This is a configuration file for the skills showcase component
@@ -26,7 +27,7 @@ const technologies = {
     { name: 'Node.js', icon: '/skills/nodejs.svg' },
     { name: 'Express.js', icon: '/skills/express.svg' },
     { name: 'Python', icon: '/skills/python.svg' },
-    { name: 'Java', icon: '/skills/svg.svg' },
+    { name: 'Java', icon: '/skills/java.png' },
     { name: 'C', icon: '/skills/c.svg' },
     { name: 'C++', icon: '/skills/cpp.svg' },
   ],
@@ -68,9 +69,18 @@ export default function MySkills() {
   return (
     <section id="skills" className="
       min-h-screen w-full flex items-center justify-center 
+      relative overflow-hidden
       p-4 sm:p-8 /* padding 4 on mobile, 8 on sm(640px) and above */
     ">
-      <div className="container mx-auto">
+      <GradientBackground
+        sectionId="skills"
+        gradientColors={{
+          start: '#F43F5E',
+          end: '#BE123C'
+        }}
+      />
+
+      <div className="container mx-auto relative z-10">
         <AnimatedText>
           <h1 className="
             text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center

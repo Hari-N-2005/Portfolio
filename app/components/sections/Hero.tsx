@@ -91,9 +91,7 @@ export default function Hero() {
         </AnimatedText>
       </main>
 
-      <AnimatedText 
-        className="row-start-3 flex gap-6 flex-wrap items-center justify-center"
-      >
+      <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="mailto:harigovindn700@gmail.com" // Replace with your email address
@@ -124,7 +122,7 @@ export default function Hero() {
           />
           LinkedIn
         </a>
-      </AnimatedText>
+      </div>
     </section>
   )
 } 

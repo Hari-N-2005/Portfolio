@@ -1,11 +1,20 @@
 'use client'
 
 import AnimatedText from "../common/AnimatedText"
+import GradientBackground from "../common/GradientBackground"
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen w-full flex items-center justify-center p-8">
-      <div className="max-w-2xl space-y-12">
+    <section id="about" className="min-h-screen w-full flex items-center justify-center p-8 relative overflow-hidden">
+      <GradientBackground
+        sectionId="about"
+        gradientColors={{
+          start: '#F43F5E',
+          end: '#BE123C'
+        }}
+      />
+
+      <div className="max-w-2xl space-y-12 relative z-10">
         <AnimatedText>
           <h1 className="text-4xl font-bold mb-8">About Me</h1>
         </AnimatedText>

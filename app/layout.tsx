@@ -18,11 +18,6 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Hari Govind N | Portfolio",
   description: "Aspiring Full Stack Developer skilled in secure web applications, scalable APIs, and data-driven tools.",
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
-  },
 };
 
 export default function RootLayout({
@@ -33,6 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="icon" href="favicon.png" />
+        <link rel="apple-touch-icon" href="favicon.png" />
         <script dangerouslySetInnerHTML={{
           __html: `
             if (typeof window !== 'undefined') {
