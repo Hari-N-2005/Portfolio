@@ -3,10 +3,10 @@
 import Image from "next/image"
 import AnimatedText from "../common/AnimatedText"
 import FloatingElements from "../common/FloatingElements"
+import basePath from "../../lib/basePath"
 
 export default function Hero() {
   const resumeLink = "https://drive.google.com/file/d/1rVSk73bsfe6ycMNcd_QIYeOOuzqi7J1k/view?usp=sharing"
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
   return (
     <section id="home" className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

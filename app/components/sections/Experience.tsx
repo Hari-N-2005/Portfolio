@@ -3,6 +3,7 @@
 import AnimatedText from '../common/AnimatedText'
 import Image from 'next/image'
 import GradientBackground from '../common/GradientBackground'
+import basePath from '../../lib/basePath'
 import ExperienceModal from './Motal'
 import { useState } from 'react'
 
@@ -95,7 +96,7 @@ export default function Experience() {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="relative w-12 h-12 rounded-xl overflow-hidden flex-shrink-0">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${experience.logo}`}
+                        src={`${basePath}${experience.logo}`}
                         alt={experience.company}
                         fill
                         className="object-cover"

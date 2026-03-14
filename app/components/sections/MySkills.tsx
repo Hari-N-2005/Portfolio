@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from "next/image"
 import AnimatedText from "../common/AnimatedText"
+import basePath from "../../lib/basePath"
 
 // This is a configuration file for the skills showcase component
 // You can modify the content below based on your skills and experience
@@ -118,7 +119,7 @@ export default function MySkills() {
                         group-hover:-translate-y-1
                       ">
                         <Image
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${tech.icon}`}
+                          src={`${basePath}${tech.icon}`}
                           alt={tech.name}
                           width={48}
                           height={48}

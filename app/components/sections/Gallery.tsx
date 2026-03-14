@@ -3,6 +3,7 @@
 import AnimatedText from '../common/AnimatedText'
 import Image from 'next/image'
 import { Typography, Container, Box, Card, CardContent, Grid } from '@mui/material'
+import basePath from '../../lib/basePath'
 import GradientBackground from '../common/GradientBackground'
 
 // Define photo data type
@@ -99,7 +100,7 @@ export default function Gallery() {
                   }}>
                     <Box sx={{ mb: { xs: 1, sm: 1.5, md: 2 } }}>
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${photo.image}`}
+                        src={`${basePath}${photo.image}`}
                         alt={photo.description}
                         width={400}
                         height={300}
