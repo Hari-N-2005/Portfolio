@@ -95,7 +95,7 @@ export default function Experience() {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="relative w-12 h-12 rounded-xl overflow-hidden flex-shrink-0">
                       <Image
-                        src={experience.logo}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${experience.logo}`}
                         alt={experience.company}
                         fill
                         className="object-cover"

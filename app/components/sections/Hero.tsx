@@ -6,6 +6,7 @@ import FloatingElements from "../common/FloatingElements"
 
 export default function Hero() {
   const resumeLink = "https://drive.google.com/file/d/1rVSk73bsfe6ycMNcd_QIYeOOuzqi7J1k/view?usp=sharing"
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
   return (
     <section id="home" className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -14,7 +15,7 @@ export default function Hero() {
         <AnimatedText className="flex flex-col items-center sm:items-start gap-4">
           <Image
             className="rounded-full"
-            src="/avatar.png" // Replace with your avatar image path in public folder
+            src={`${basePath}/avatar.png`} // Replace with your avatar image path in public folder
             alt="Profile Picture"
             width={120}
             height={120}
@@ -54,7 +55,7 @@ export default function Hero() {
           >
             <Image
               className="invert dark:invert-0 mr-2"
-              src="/github.svg"
+              src={`${basePath}/github.svg`}
               alt="GitHub"
               width={20}
               height={20}
@@ -79,7 +80,7 @@ export default function Hero() {
           >
             <Image
               className="dark:invert mr-2"
-              src="/resume.svg"
+              src={`${basePath}/resume.svg`}
               alt="Resume"
               width={20}
               height={20}
@@ -100,7 +101,7 @@ export default function Hero() {
           <Image
             aria-hidden
             className="dark:invert"
-            src="/mail.svg"
+            src={`${basePath}/mail.svg`}
             alt="Email"
             width={16}
             height={16}
@@ -116,7 +117,7 @@ export default function Hero() {
           <Image
             aria-hidden
             className="dark:invert"
-            src="/linkedin.svg"
+            src={`${basePath}/linkedin.svg`}
             alt="LinkedIn"
             width={16}
             height={16}

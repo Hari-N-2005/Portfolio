@@ -99,7 +99,7 @@ export default function Gallery() {
                   }}>
                     <Box sx={{ mb: { xs: 1, sm: 1.5, md: 2 } }}>
                       <Image
-                        src={photo.image}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${photo.image}`}
                         alt={photo.description}
                         width={400}
                         height={300}

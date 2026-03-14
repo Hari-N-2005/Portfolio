@@ -118,7 +118,7 @@ export default function MySkills() {
                         group-hover:-translate-y-1
                       ">
                         <Image
-                          src={tech.icon}
+                          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${tech.icon}`}
                           alt={tech.name}
                           width={48}
                           height={48}
