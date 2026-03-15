@@ -1,6 +1,8 @@
-// process.env.NODE_ENV is replaced with a string literal at build time by webpack.
-// In production builds (next build), this evaluates to '/Next-Portfolio'.
-// In development (next dev), this evaluates to ''.
-const basePath = process.env.NODE_ENV === 'production' ? '/Next-Portfolio' : ''
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH?.trim() || ''
+const basePath = rawBasePath
+	? rawBasePath.startsWith('/')
+		? rawBasePath
+		: `/${rawBasePath}`
+	: ''
 
 export default basePath

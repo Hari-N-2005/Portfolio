@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
-const repoName = "Next-Portfolio";
-const isGitHubPagesBuild = process.env.NODE_ENV === "production";
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH?.trim() || "";
+const normalizedBasePath = rawBasePath
+  ? rawBasePath.startsWith("/")
+    ? rawBasePath
+    : `/${rawBasePath}`
+  : "";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -9,8 +13,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: isGitHubPagesBuild ? `/${repoName}` : "",
-  assetPrefix: isGitHubPagesBuild ? `/${repoName}/` : "",
+  basePath: normalizedBasePath,
+  assetPrefix: normalizedBasePath ? `${normalizedBasePath}/` : "",
 };
 
 export default nextConfig;
