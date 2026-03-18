@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useEffect } from 'react'
 
 // Define Props type for data passed from Research component
@@ -180,11 +179,12 @@ export default function ResearchModal({ paper, onClose }: Props) {
           {/* Chart image - only shown if chartImage provided */}
           {paper.chartImage && (
             <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
-              <Image
+              <img
                 src={paper.chartImage}
                 alt="Research visualization"
-                fill
-                className="object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           )}

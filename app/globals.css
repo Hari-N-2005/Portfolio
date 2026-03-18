@@ -7,6 +7,12 @@
   --foreground: #171717;
 }
 
+/* Explicitly mark the site as dark-capable so dark-mode extensions avoid force-transforming it. */
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -20,10 +26,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  /* Keeps browser/form UI in dark mode consistently for extension/theme detection. */
+  background-color: #0a0a0a;
+  color: #ededed;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}

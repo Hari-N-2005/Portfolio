@@ -35,7 +35,7 @@ export default function AnimatedText({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, margin: "-100px" }}
+      viewport={{ once: true, margin: "-100px" }}
       variants={fadeInVariants}
       className={className}
     >

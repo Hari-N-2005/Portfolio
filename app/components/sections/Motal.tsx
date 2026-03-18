@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useEffect } from 'react'
 import { 
   getProjectById,
@@ -278,19 +277,20 @@ export default function ExperienceModal({
                           group-hover:scale-110   
                           group-hover:-translate-y-1
                         ">
-                          <Image
+                          <img
                             src={getTechIconPath(item)}
                             alt={item}
                             width={32}
                             height={32}
                             onError={(e) => {
-                              const img = e.currentTarget as HTMLImageElement
-                              img.src = `${basePath}/skills/svg.svg`
+                              e.currentTarget.src = `${basePath}/skills/svg.svg`
                             }}
                             className="
                               dark:invert          
                               sm:w-[40px] sm:h-[40px]
                             "
+                            loading="lazy"
+                            decoding="async"
                           />
                         </div>
                         <span className="

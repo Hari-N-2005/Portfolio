@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image"
 import AnimatedText from "../common/AnimatedText"
 import FloatingElements from "../common/FloatingElements"
 import basePath from "../../lib/basePath"
@@ -13,13 +12,14 @@ export default function Hero() {
       <FloatingElements />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <AnimatedText className="flex flex-col items-center sm:items-start gap-4">
-          <Image
+          <img
             className="rounded-full"
             src={`${basePath}/avatar.png`} // Replace with your avatar image path in public folder
             alt="Profile Picture"
             width={120}
             height={120}
-            priority
+            loading="eager"
+            decoding="async"
           />
           <h1 className="text-4xl font-bold">Hari Govind N</h1>
           <p className="text-lg text-foreground/80 font-[family-name:var(--font-geist-mono)]">
@@ -53,13 +53,14 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               className="invert dark:invert-0 mr-2"
               src={`${basePath}/github.svg`}
               alt="GitHub"
               width={20}
               height={20}
-              sizes="20px"
+              loading="lazy"
+              decoding="async"
             />
             <span className="relative z-20">GitHub</span>
           </a>
@@ -74,17 +75,18 @@ export default function Hero() {
               text-base                              // Fixed font size
               min-w-44                              // Fixed minimum width
             "
-            href={"https://drive.google.com/file/d/1rVSk73bsfe6ycMNcd_QIYeOOuzqi7J1k/view?usp=sharing"} // Supports local path (e.g. /resume.pdf) or external Drive link
+            href={"https://drive.google.com/file/d/12JvP47voAtFPeh5Gm9m-SYcyNrtfd-lJ/view?usp=sharing"} // Supports local path (e.g. /resume.pdf) or external Drive link
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               className="dark:invert mr-2"
               src={`${basePath}/resume.svg`}
               alt="Resume"
               width={20}
               height={20}
-              sizes="20px"
+              loading="lazy"
+              decoding="async"
             />
             View Resume
           </a>
@@ -96,13 +98,15 @@ export default function Hero() {
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="mailto:harigovindn700@gmail.com" // Replace with your email address
         >
-          <Image
+          <img
             aria-hidden
             className="dark:invert"
             src={`${basePath}/mail.svg`}
             alt="Email"
             width={16}
             height={16}
+            loading="lazy"
+            decoding="async"
           />
           Send Email
         </a>
@@ -112,13 +116,15 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
             className="dark:invert"
             src={`${basePath}/linkedin.svg`}
             alt="LinkedIn"
             width={16}
             height={16}
+            loading="lazy"
+            decoding="async"
           />
           LinkedIn
         </a>

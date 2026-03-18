@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import basePath from "./lib/basePath";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,10 +15,17 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const iconPath = `${basePath}/favicon.png?v=20260318`;
+
 // TODO: Please update the title and description with your personal information
 export const metadata: Metadata = {
   title: "Hari Govind N | Portfolio",
   description: "Aspiring Full Stack Developer skilled in secure web applications, scalable APIs, and data-driven tools.",
+  icons: {
+    icon: iconPath,
+    shortcut: iconPath,
+    apple: iconPath,
+  },
 };
 
 export default function RootLayout({
@@ -26,11 +34,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#0a0a0a" />
+        <link rel="icon" type="image/png" sizes="32x32" href={iconPath} />
+        <link rel="shortcut icon" href={iconPath} />
+        <link rel="apple-touch-icon" href={iconPath} />
         <script dangerouslySetInnerHTML={{
           __html: `
             if (typeof window !== 'undefined') {
@@ -40,7 +50,7 @@ export default function RootLayout({
           `
         }} />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
         {children}
       </body>
     </html>

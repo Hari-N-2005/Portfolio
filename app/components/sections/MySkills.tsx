@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Image from "next/image"
 import AnimatedText from "../common/AnimatedText"
 import GradientBackground from "../common/GradientBackground"
 import basePath from "../../lib/basePath"
@@ -128,7 +127,7 @@ export default function MySkills() {
                         group-hover:scale-110   
                         group-hover:-translate-y-1
                       ">
-                        <Image
+                        <img
                           src={`${basePath}${tech.icon}`}
                           alt={tech.name}
                           width={48}
@@ -137,6 +136,8 @@ export default function MySkills() {
                             dark:invert          
                             sm:w-[56px] sm:h-[56px] /* icon size 56px on sm(640px) and above */
                           "
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                       <span className="

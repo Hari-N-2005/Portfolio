@@ -1,12 +1,9 @@
 'use client'
 
 import AnimatedText from '../common/AnimatedText'
-import Image from 'next/image'
 import GradientBackground from '../common/GradientBackground'
 import ExperienceModal from './Motal'
 import { useState } from 'react'
-
-const isExternalImageUrl = (src: string) => /^https?:\/\//i.test(src)
 
 // Define project data type
 // Each project must include:
@@ -131,21 +128,13 @@ export default function Projects() {
                   "
                 >
                   <div className="relative w-full h-48 md:h-72 mb-4">
-                    {isExternalImageUrl(project.image) ? (
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="rounded-lg object-cover w-full h-full"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="rounded-lg object-cover"
-                      />
-                    )}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="rounded-lg object-cover w-full h-full"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   
                   <h2 className="text-2xl font-semibold mb-2">

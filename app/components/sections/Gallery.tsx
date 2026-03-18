@@ -1,7 +1,6 @@
 'use client'
 
 import AnimatedText from '../common/AnimatedText'
-import Image from 'next/image'
 import { Typography, Container, Box, Card, CardContent, Grid } from '@mui/material'
 import basePath from '../../lib/basePath'
 import GradientBackground from '../common/GradientBackground'
@@ -99,12 +98,14 @@ export default function Gallery() {
                     p: { xs: 1.5, sm: 2, md: 3 }
                   }}>
                     <Box sx={{ mb: { xs: 1, sm: 1.5, md: 2 } }}>
-                      <Image
+                      <img
                         src={`${basePath}${photo.image}`}
                         alt={photo.description}
                         width={400}
                         height={300}
                         className="rounded-lg object-cover w-full"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </Box>
                     <Typography variant="body1" sx={{ 
