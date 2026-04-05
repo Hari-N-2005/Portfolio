@@ -27,8 +27,112 @@ export type ProjectDetail = {
 export const PROJECT_DATA: Record<number, ProjectDetail> = {
   1: {
     id: 1,
+    title: "Vettly",
+    company: "Personal Project",
+    overview: "Vettly is an AI-powered tender compliance assistant that converts unstructured RFP documents into a clear review workflow for requirements coverage, risk checks, and bid-readiness decisions.",
+    mainImage: "https://i.ibb.co/2YtzCGgJ/Screenshot-2026-04-05-101604.png",
+    link: "https://github.com/Hari-N-2005/Vettly",
+    github: "https://github.com/Hari-N-2005/Vettly",
+    features: [
+      {
+        title: "RFP Parsing and Structuring",
+        description: "Transforms tender documents into structured checkpoints so procurement teams can quickly review mandatory criteria and submission requirements.",
+        image: "https://i.ibb.co/2YtzCGgJ/Screenshot-2026-04-05-101604.png"
+      },
+      {
+        title: "Compliance and Risk Workflow",
+        description: "Provides an interactive review flow to track compliance status, highlight potential gaps, and improve final bid quality before submission.",
+        image: "https://i.ibb.co/2YtzCGgJ/Screenshot-2026-04-05-101604.png"
+      }
+    ],
+    techStack: [
+      {
+        category: "Frontend",
+        items: ["React", "TypeScript", "HTML5", "CSS3"]
+      },
+      {
+        category: "Backend",
+        items: ["Node.js", "Express", "Supabase", "JWT"]
+      },
+      {
+        category: "Infrastructure and Tooling",
+        items: ["Docker", "REST API", "Git", "GitHub"]
+      }
+    ],
+    achievements: [
+      {
+        metric: "Domain",
+        value: "Tender Compliance",
+        change: 0
+      },
+      {
+        metric: "Workflow",
+        value: "AI-assisted",
+        change: 0
+      },
+      {
+        metric: "Use Case",
+        value: "Procurement Review",
+        change: 0
+      }
+    ]
+  },
+  2: {
+    id: 2,
+    title: "EzyVote",
+    company: "Personal Project",
+    overview: "EzyVote is a secure online voting platform built for college clubs and campus cells, with authenticated ballots, role-based access, and live result visibility.",
+    mainImage: "https://i.ibb.co/4n90pPk0/image.png",
+    link: "https://github.com/Hari-N-2005/EzyVote",
+    github: "https://github.com/Hari-N-2005/EzyVote",
+    features: [
+      {
+        title: "Secure Election Setup",
+        description: "Supports controlled election creation for clubs and cells with protected access and structured ballot management.",
+        image: "https://i.ibb.co/4n90pPk0/image.png"
+      },
+      {
+        title: "Live Results and Integrity",
+        description: "Displays voting outcomes in real time while maintaining database-backed consistency for reliable final counts.",
+        image: "https://i.ibb.co/4n90pPk0/image.png"
+      }
+    ],
+    techStack: [
+      {
+        category: "Frontend",
+        items: ["React", "TypeScript", "HTML5", "CSS3"]
+      },
+      {
+        category: "Backend",
+        items: ["Node.js", "Express", "MySQL", "JWT"]
+      },
+      {
+        category: "API and Tooling",
+        items: ["REST API", "Git", "GitHub", "VSCode"]
+      }
+    ],
+    achievements: [
+      {
+        metric: "Domain",
+        value: "Campus Elections",
+        change: 0
+      },
+      {
+        metric: "Result Mode",
+        value: "Real-time",
+        change: 0
+      },
+      {
+        metric: "Security",
+        value: "Authenticated",
+        change: 0
+      }
+    ]
+  },
+  3: {
+    id: 3,
     title: "SecureDrive",
-    company: "Personal Project", 
+    company: "Personal Project",
     overview: "SecureDrive is a private, password-protected web application for secure file management with authentication and Google Drive integration.",
     mainImage: "https://i.ibb.co/kgyMB9ks/boxlogo3.jpg",
     link: "https://github.com/Hari-N-2005/SecureDrive",
@@ -73,11 +177,11 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
       }
     ]
   },
-  2: {
-    id: 2,
+  4: {
+    id: 4,
     title: "EcoMind",
     company: "Personal Project",
-    overview: "EcoMind is a Chrome extension that analyzes product pages in real time to support ethical and sustainable shopping decisions.", 
+    overview: "EcoMind is a Chrome extension that analyzes product pages in real time to support ethical and sustainable shopping decisions.",
     mainImage: "https://i.ibb.co/N2TV0xj9/ecomind.jpg",
     link: "https://github.com/Hari-N-2005/EcoMind",
     github: "https://github.com/Hari-N-2005/EcoMind",
@@ -121,8 +225,8 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
       }
     ]
   },
-  3: {
-    id: 3,
+  5: {
+    id: 5,
     title: "CarbonTally",
     company: "Hackathon Project",
     overview: "CarbonTally is a website that uses an XGBoost model to help users predict and track their monthly carbon emissions.",
@@ -169,8 +273,8 @@ export const PROJECT_DATA: Record<number, ProjectDetail> = {
       }
     ]
   },
-  4: {
-    id: 4,
+  6: {
+    id: 6,
     title: "ChronoWeb",
     company: "Personal Project",
     overview: "ChronoWeb is a Chrome extension that tracks time spent on websites and helps users improve productivity and time management.",
