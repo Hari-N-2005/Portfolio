@@ -32,6 +32,24 @@ type Project = {
 // 4. Project descriptions should highlight core features and technical highlights
 const projects: Project[] = [
   {
+    id: 6,
+    title: "Vettly",
+    description: "An AI based tender compliance assistant for procurement and bid-evaluation teams. It parses RFP files to a structured review flow where requirements, compliance checks, and risks can be tracked clearly.",
+    period: "2026",
+    image: "https://i.ibb.co/2YtzCGgJ/Screenshot-2026-04-05-101604.png",
+    skills: ["React", "Node.js", "Docker", "TypeScript", "Express","Supabase", "JWT", "REST API"],
+    link: "https://github.com/Hari-N-2005/Vettly"
+  },
+  {
+    id: 5,
+    title: "EzyVote",
+    description: "A secure voting platform for college clubs and cells with real-time results and database-backed integrity controls.",
+    period: "2024",
+    image: "https://i.ibb.co/4n90pPk0/image.png",
+    skills: ["React", "TypeScript", "Node.js", "Express", "MySQL", "JWT", "REST API"],
+    link: "https://github.com/Hari-N-2005/EzyVote"
+  },
+  {
     id: 1,
     title: "SecureDrive",
     description: "A private, password-protected web application with secure authentication and Google Drive file operations (upload, download, delete).",
@@ -40,12 +58,11 @@ const projects: Project[] = [
     skills: ["Node.js", "Express", "JavaScript", "MongoDB", "JWT"], // Tech stack
     link: "https://github.com/Hari-N-2005/SecureDrive"
   },
-
   {
     id: 2,
     title: "EcoMind",
     description: "A Chrome extension that analyzes product pages in real time to support ethical and sustainable shopping decisions.",
-    period: "2024 - 2025",
+    period: "2025",
     image: "https://i.ibb.co/N2TV0xj9/ecomind.jpg",
     skills: ["React", "JavaScript", "Chrome Extension"],
     link: "https://github.com/Hari-N-2005/EcoMind"
@@ -63,20 +80,11 @@ const projects: Project[] = [
     id: 4,
     title: "ChronoWeb",
     description: "A Chrome extension that allows users to track their time spent on various websites, providing insights into productivity and time management.",
-    period: "2024 - 2025",
-    image: "https://i.ibb.co/pv65F6Hy/chronoweb.png",
-    skills: ["React", "JavaScript", "Chrome Extension", "Data Visualization"],
-    link: "https://github.com/Hari-N-2005/ChronoWeb"
-  },  
-  /*{
-    id: 5,                                   //Image unavailable. Please update image path or replace with another project.
-    title: "EzyVote",
-    description: "A secure voting platform for college clubs with role-based access, election management, and automated result tallying.",
     period: "2024",
-    image: "/gallery/example.jpg",
-    skills: ["Node.js", "Express", "MySQL", "JavaScript"],
-    link: "https://github.com/Hari-N-2005"
-  },*/
+    image: "https://i.ibb.co/pv65F6Hy/chronoweb.png",
+    skills: ["React", "Node.js", "JavaScript", "Chrome Extension"],
+    link: "https://github.com/Hari-N-2005/ChronoWeb"
+  },
 ];
 
 export default function Projects() {
@@ -106,7 +114,7 @@ export default function Projects() {
           </h1>
         </AnimatedText>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 relative z-0 max-w-6xl w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 relative z-0 max-w-7xl w-full">
           {projects.map((project) => (
             <div key={project.id}>
               <AnimatedText>
