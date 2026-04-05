@@ -32,7 +32,7 @@ type Project = {
 // 4. Project descriptions should highlight core features and technical highlights
 const projects: Project[] = [
   {
-    id: 6,
+    id: 1,
     title: "Vettly",
     description: "An AI based tender compliance assistant for procurement and bid-evaluation teams. It parses RFP files to a structured review flow where requirements, compliance checks, and risks can be tracked clearly.",
     period: "2026",
@@ -41,7 +41,7 @@ const projects: Project[] = [
     link: "https://github.com/Hari-N-2005/Vettly"
   },
   {
-    id: 5,
+    id: 2,
     title: "EzyVote",
     description: "A secure voting platform for college clubs and cells with real-time results and database-backed integrity controls.",
     period: "2024",
@@ -50,7 +50,7 @@ const projects: Project[] = [
     link: "https://github.com/Hari-N-2005/EzyVote"
   },
   {
-    id: 1,
+    id: 3,
     title: "SecureDrive",
     description: "A private, password-protected web application with secure authentication and Google Drive file operations (upload, download, delete).",
     period: "2024",
@@ -59,7 +59,7 @@ const projects: Project[] = [
     link: "https://github.com/Hari-N-2005/SecureDrive"
   },
   {
-    id: 2,
+    id: 4,
     title: "EcoMind",
     description: "A Chrome extension that analyzes product pages in real time to support ethical and sustainable shopping decisions.",
     period: "2025",
@@ -68,7 +68,7 @@ const projects: Project[] = [
     link: "https://github.com/Hari-N-2005/EcoMind"
   },
   {
-    id: 3,
+    id: 5,
     title: "CarbonTally",
     description: "Carbon Tally is a webstie that uses a xgboost model which enables users to predict and track their carbon emissions per month.",
     period: "2024",
@@ -77,7 +77,7 @@ const projects: Project[] = [
     link: "https://github.com/Hari-N-2005/NasaSpaceChallenge"
   },
   {
-    id: 4,
+    id: 6,
     title: "ChronoWeb",
     description: "A Chrome extension that allows users to track their time spent on various websites, providing insights into productivity and time management.",
     period: "2024",
